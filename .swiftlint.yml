@@ -1,0 +1,13 @@
+disabled_rules:
+  - line_length
+included:
+  - BlackSwan
+  - BlackSwanTests
+excluded:
+  - Pods
+
+variable_name:
+  excluded:
+    - id
+
+reporter: "xcode"
