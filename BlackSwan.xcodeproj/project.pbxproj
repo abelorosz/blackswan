@@ -10,6 +10,26 @@
 		8C25E96B1D95253700A9C79C /* BlackSwanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25E96A1D95253700A9C79C /* BlackSwanTests.swift */; };
 		B5EC68D51D97D9F700BD8AC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC68D41D97D9F700BD8AC6 /* AppDelegate.swift */; };
 		B5EC68D71D97DA2800BD8AC6 /* Swan.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EC68D61D97DA2800BD8AC6 /* Swan.xcassets */; };
+		B5EC68DD1D97FCB700BD8AC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EC68DC1D97FCB700BD8AC6 /* Main.storyboard */; };
+		B5EC68DF1D97FCC700BD8AC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EC68DE1D97FCC700BD8AC6 /* LaunchScreen.storyboard */; };
+		B5EC68E11D97FF8100BD8AC6 /* APICurrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC68E01D97FF8100BD8AC6 /* APICurrent.swift */; };
+		B5EC68E31D98002D00BD8AC6 /* APIWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC68E21D98002D00BD8AC6 /* APIWeather.swift */; };
+		B5EC68E71D9815B600BD8AC6 /* CurrentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC68E61D9815B600BD8AC6 /* CurrentCell.swift */; };
+		B5EC68E91D9815C700BD8AC6 /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC68E81D9815C700BD8AC6 /* ForecastCell.swift */; };
+		B5EC68ED1D98165F00BD8AC6 /* TableView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC68EC1D98165F00BD8AC6 /* TableView+Utils.swift */; };
+		B5EC68EF1D981A5500BD8AC6 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC68EE1D981A5500BD8AC6 /* Weather.swift */; };
+		B5EC68F11D981BCE00BD8AC6 /* CurrentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC68F01D981BCE00BD8AC6 /* CurrentViewController.swift */; };
+		B5EC68F51D981C0200BD8AC6 /* CurrentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC68F41D981C0200BD8AC6 /* CurrentPresenter.swift */; };
+		B5EC68F71D981C1000BD8AC6 /* CurrentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC68F61D981C1000BD8AC6 /* CurrentInteractor.swift */; };
+		B5EC68F91D981C2D00BD8AC6 /* CurrentConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC68F81D981C2D00BD8AC6 /* CurrentConfigurator.swift */; };
+		B5EC68FC1D982B6B00BD8AC6 /* APICurrentWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC68FB1D982B6B00BD8AC6 /* APICurrentWorker.swift */; };
+		B5EC68FE1D982B7900BD8AC6 /* APIForecastWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC68FD1D982B7900BD8AC6 /* APIForecastWorker.swift */; };
+		B5EC69031D98315600BD8AC6 /* Double+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC69021D98315600BD8AC6 /* Double+Utils.swift */; };
+		B5EC69061D98330E00BD8AC6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC69051D98330E00BD8AC6 /* API.swift */; };
+		B5EC69081D983E6F00BD8AC6 /* APIForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC69071D983E6F00BD8AC6 /* APIForecast.swift */; };
+		B5EC690B1D986B8100BD8AC6 /* ForecastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5EC690A1D986B8100BD8AC6 /* ForecastView.xib */; };
+		B5EC690D1D986D2700BD8AC6 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC690C1D986D2700BD8AC6 /* ForecastView.swift */; };
+		B5EC69101D98733100BD8AC6 /* View+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC690F1D98733100BD8AC6 /* View+Utils.swift */; };
 		EFC4FEB7D01732E310EF4A3B /* Pods_BlackSwan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D58978D74F8C499E867238 /* Pods_BlackSwan.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +52,26 @@
 		B5EC68D21D97D9C100BD8AC6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Support/Info.plist; sourceTree = "<group>"; };
 		B5EC68D41D97D9F700BD8AC6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Code/AppDelegate.swift; sourceTree = "<group>"; };
 		B5EC68D61D97DA2800BD8AC6 /* Swan.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Swan.xcassets; path = Assets/Swan.xcassets; sourceTree = "<group>"; };
+		B5EC68DC1D97FCB700BD8AC6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Support/Main.storyboard; sourceTree = "<group>"; };
+		B5EC68DE1D97FCC700BD8AC6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Support/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5EC68E01D97FF8100BD8AC6 /* APICurrent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APICurrent.swift; path = Code/Common/Models/APICurrent.swift; sourceTree = "<group>"; };
+		B5EC68E21D98002D00BD8AC6 /* APIWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIWeather.swift; path = Code/Common/Models/APIWeather.swift; sourceTree = "<group>"; };
+		B5EC68E61D9815B600BD8AC6 /* CurrentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentCell.swift; path = Code/Modules/Current/Cells/CurrentCell.swift; sourceTree = "<group>"; };
+		B5EC68E81D9815C700BD8AC6 /* ForecastCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastCell.swift; path = Code/Modules/Current/Cells/ForecastCell.swift; sourceTree = "<group>"; };
+		B5EC68EC1D98165F00BD8AC6 /* TableView+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TableView+Utils.swift"; path = "Code/Common/Extensions/TableView/TableView+Utils.swift"; sourceTree = "<group>"; };
+		B5EC68EE1D981A5500BD8AC6 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Weather.swift; path = Code/Common/Models/Weather.swift; sourceTree = "<group>"; };
+		B5EC68F01D981BCE00BD8AC6 /* CurrentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentViewController.swift; path = Code/Modules/Current/CurrentViewController.swift; sourceTree = "<group>"; };
+		B5EC68F41D981C0200BD8AC6 /* CurrentPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentPresenter.swift; path = Code/Modules/Current/CurrentPresenter.swift; sourceTree = "<group>"; };
+		B5EC68F61D981C1000BD8AC6 /* CurrentInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentInteractor.swift; path = Code/Modules/Current/CurrentInteractor.swift; sourceTree = "<group>"; };
+		B5EC68F81D981C2D00BD8AC6 /* CurrentConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentConfigurator.swift; path = Code/Modules/Current/Cells/CurrentConfigurator.swift; sourceTree = "<group>"; };
+		B5EC68FB1D982B6B00BD8AC6 /* APICurrentWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APICurrentWorker.swift; path = Code/Common/Workers/APICurrentWorker.swift; sourceTree = "<group>"; };
+		B5EC68FD1D982B7900BD8AC6 /* APIForecastWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIForecastWorker.swift; path = Code/Common/Workers/APIForecastWorker.swift; sourceTree = "<group>"; };
+		B5EC69021D98315600BD8AC6 /* Double+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Double+Utils.swift"; path = "Code/Common/Extensions/Double/Double+Utils.swift"; sourceTree = "<group>"; };
+		B5EC69051D98330E00BD8AC6 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Code/Common/Helpers/API.swift; sourceTree = "<group>"; };
+		B5EC69071D983E6F00BD8AC6 /* APIForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIForecast.swift; path = Code/Common/Models/APIForecast.swift; sourceTree = "<group>"; };
+		B5EC690A1D986B8100BD8AC6 /* ForecastView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ForecastView.xib; path = Code/Modules/Current/Views/ForecastView.xib; sourceTree = "<group>"; };
+		B5EC690C1D986D2700BD8AC6 /* ForecastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastView.swift; path = Code/Modules/Current/Views/ForecastView.swift; sourceTree = "<group>"; };
+		B5EC690F1D98733100BD8AC6 /* View+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "View+Utils.swift"; path = "Code/Common/Extensions/View/View+Utils.swift"; sourceTree = "<group>"; };
 		D2D58978D74F8C499E867238 /* Pods_BlackSwan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackSwan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44FC3AEE91FFA4E4F71E4AD /* Pods-BlackSwan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackSwan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlackSwan/Pods-BlackSwan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				B5EC68D21D97D9C100BD8AC6 /* Info.plist */,
+				B5EC68DC1D97FCB700BD8AC6 /* Main.storyboard */,
+				B5EC68DE1D97FCC700BD8AC6 /* LaunchScreen.storyboard */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -124,6 +166,9 @@
 			isa = PBXGroup;
 			children = (
 				B5EC68DB1D97F73700BD8AC6 /* Models */,
+				B5EC69041D9832FC00BD8AC6 /* Helpers */,
+				B5EC68EA1D98163400BD8AC6 /* Extensions */,
+				B5EC68FA1D982B4C00BD8AC6 /* Workers */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -131,6 +176,7 @@
 		B5EC68DA1D97F72C00BD8AC6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B5EC68E41D98153200BD8AC6 /* Current */,
 			);
 			name = Modules;
 			sourceTree = "<group>";
@@ -138,8 +184,94 @@
 		B5EC68DB1D97F73700BD8AC6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B5EC68E01D97FF8100BD8AC6 /* APICurrent.swift */,
+				B5EC69071D983E6F00BD8AC6 /* APIForecast.swift */,
+				B5EC68E21D98002D00BD8AC6 /* APIWeather.swift */,
+				B5EC68EE1D981A5500BD8AC6 /* Weather.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		B5EC68E41D98153200BD8AC6 /* Current */ = {
+			isa = PBXGroup;
+			children = (
+				B5EC68E51D98158E00BD8AC6 /* Cells */,
+				B5EC69091D986B6A00BD8AC6 /* Views */,
+				B5EC68F81D981C2D00BD8AC6 /* CurrentConfigurator.swift */,
+				B5EC68F61D981C1000BD8AC6 /* CurrentInteractor.swift */,
+				B5EC68F41D981C0200BD8AC6 /* CurrentPresenter.swift */,
+				B5EC68F01D981BCE00BD8AC6 /* CurrentViewController.swift */,
+			);
+			name = Current;
+			sourceTree = "<group>";
+		};
+		B5EC68E51D98158E00BD8AC6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B5EC68E61D9815B600BD8AC6 /* CurrentCell.swift */,
+				B5EC68E81D9815C700BD8AC6 /* ForecastCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		B5EC68EA1D98163400BD8AC6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B5EC69011D98314200BD8AC6 /* Double */,
+				B5EC68EB1D98163C00BD8AC6 /* TableView */,
+				B5EC690E1D98731700BD8AC6 /* View */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B5EC68EB1D98163C00BD8AC6 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				B5EC68EC1D98165F00BD8AC6 /* TableView+Utils.swift */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		B5EC68FA1D982B4C00BD8AC6 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				B5EC68FB1D982B6B00BD8AC6 /* APICurrentWorker.swift */,
+				B5EC68FD1D982B7900BD8AC6 /* APIForecastWorker.swift */,
+			);
+			name = Workers;
+			sourceTree = "<group>";
+		};
+		B5EC69011D98314200BD8AC6 /* Double */ = {
+			isa = PBXGroup;
+			children = (
+				B5EC69021D98315600BD8AC6 /* Double+Utils.swift */,
+			);
+			name = Double;
+			sourceTree = "<group>";
+		};
+		B5EC69041D9832FC00BD8AC6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B5EC69051D98330E00BD8AC6 /* API.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		B5EC69091D986B6A00BD8AC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5EC690A1D986B8100BD8AC6 /* ForecastView.xib */,
+				B5EC690C1D986D2700BD8AC6 /* ForecastView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B5EC690E1D98731700BD8AC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5EC690F1D98733100BD8AC6 /* View+Utils.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		CD265F39B4CEC2D758077D16 /* Pods */ = {
@@ -207,6 +339,9 @@
 		8C25E94A1D95253700A9C79C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					clear_sky,
+				);
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Abel Orosz";
@@ -247,7 +382,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5EC68DF1D97FCC700BD8AC6 /* LaunchScreen.storyboard in Resources */,
 				B5EC68D71D97DA2800BD8AC6 /* Swan.xcassets in Resources */,
+				B5EC68DD1D97FCB700BD8AC6 /* Main.storyboard in Resources */,
+				B5EC690B1D986B8100BD8AC6 /* ForecastView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +465,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5EC68F51D981C0200BD8AC6 /* CurrentPresenter.swift in Sources */,
+				B5EC690D1D986D2700BD8AC6 /* ForecastView.swift in Sources */,
+				B5EC68F11D981BCE00BD8AC6 /* CurrentViewController.swift in Sources */,
+				B5EC69081D983E6F00BD8AC6 /* APIForecast.swift in Sources */,
+				B5EC68E91D9815C700BD8AC6 /* ForecastCell.swift in Sources */,
+				B5EC68ED1D98165F00BD8AC6 /* TableView+Utils.swift in Sources */,
+				B5EC68E11D97FF8100BD8AC6 /* APICurrent.swift in Sources */,
+				B5EC68E31D98002D00BD8AC6 /* APIWeather.swift in Sources */,
+				B5EC68F71D981C1000BD8AC6 /* CurrentInteractor.swift in Sources */,
 				B5EC68D51D97D9F700BD8AC6 /* AppDelegate.swift in Sources */,
+				B5EC69031D98315600BD8AC6 /* Double+Utils.swift in Sources */,
+				B5EC68FC1D982B6B00BD8AC6 /* APICurrentWorker.swift in Sources */,
+				B5EC68F91D981C2D00BD8AC6 /* CurrentConfigurator.swift in Sources */,
+				B5EC68E71D9815B600BD8AC6 /* CurrentCell.swift in Sources */,
+				B5EC68FE1D982B7900BD8AC6 /* APIForecastWorker.swift in Sources */,
+				B5EC69061D98330E00BD8AC6 /* API.swift in Sources */,
+				B5EC69101D98733100BD8AC6 /* View+Utils.swift in Sources */,
+				B5EC68EF1D981A5500BD8AC6 /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +545,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -433,7 +588,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -445,10 +600,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F44FC3AEE91FFA4E4F71E4AD /* Pods-BlackSwan.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/BlackSwan/Support/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abelorosz.BlackSwan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -461,10 +617,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 13CF9A25EAA4987A25AA2D73 /* Pods-BlackSwan.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/BlackSwan/Support/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abelorosz.BlackSwan;
 				PRODUCT_NAME = "$(TARGET_NAME)";

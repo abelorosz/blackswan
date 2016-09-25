@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kRU-kI-Sx4" customClass="ForecastView" customModule="BlackSwan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gmd-C3-1tK">
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="gVI-XC-YWo"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uL-hz-Xtg">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="VeO-vb-3fb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="02n" translatesAutoresizingMaskIntoConstraints="NO" id="ffk-a0-fvj">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="a0Z-6V-Vv2"/>
+                        <constraint firstAttribute="width" constant="30" id="frM-0h-lQg"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pb3-Le-XZV">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="kXW-0A-srm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ffk-a0-fvj" firstAttribute="centerY" secondItem="kRU-kI-Sx4" secondAttribute="centerY" id="2G4-RN-j7V"/>
+                <constraint firstAttribute="bottom" secondItem="gmd-C3-1tK" secondAttribute="bottom" id="KqO-dB-wK1"/>
+                <constraint firstAttribute="trailing" secondItem="7uL-hz-Xtg" secondAttribute="trailing" id="TYi-T1-nXd"/>
+                <constraint firstItem="ffk-a0-fvj" firstAttribute="centerX" secondItem="kRU-kI-Sx4" secondAttribute="centerX" id="Tx9-Y0-TSS"/>
+                <constraint firstItem="Pb3-Le-XZV" firstAttribute="top" secondItem="kRU-kI-Sx4" secondAttribute="top" id="ZL5-xD-xl5"/>
+                <constraint firstItem="Pb3-Le-XZV" firstAttribute="leading" secondItem="kRU-kI-Sx4" secondAttribute="leading" id="a1W-Fl-HNT"/>
+                <constraint firstItem="gmd-C3-1tK" firstAttribute="leading" secondItem="Pb3-Le-XZV" secondAttribute="trailing" id="fwA-gA-5nB"/>
+                <constraint firstAttribute="trailing" secondItem="gmd-C3-1tK" secondAttribute="trailing" id="igJ-Oc-Zp4"/>
+                <constraint firstItem="7uL-hz-Xtg" firstAttribute="leading" secondItem="kRU-kI-Sx4" secondAttribute="leading" id="lWH-K5-bTh"/>
+                <constraint firstAttribute="bottom" secondItem="7uL-hz-Xtg" secondAttribute="bottom" constant="4" id="qjX-JZ-30M"/>
+                <constraint firstItem="gmd-C3-1tK" firstAttribute="top" secondItem="kRU-kI-Sx4" secondAttribute="top" id="yh7-78-9Bn"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="icon" destination="ffk-a0-fvj" id="MM5-w4-0K4"/>
+                <outlet property="temperature" destination="7uL-hz-Xtg" id="Cxj-Oh-ikC"/>
+                <outlet property="time" destination="Pb3-Le-XZV" id="hFT-1L-rxr"/>
+            </connections>
+            <point key="canvasLocation" x="-3" y="-49"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="02n" width="80" height="60"/>
+    </resources>
+</document>
