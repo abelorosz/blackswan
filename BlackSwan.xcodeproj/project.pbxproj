@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C25E9561D95253700A9C79C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25E9551D95253700A9C79C /* AppDelegate.swift */; };
 		8C25E96B1D95253700A9C79C /* BlackSwanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25E96A1D95253700A9C79C /* BlackSwanTests.swift */; };
+		B5EC68D51D97D9F700BD8AC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC68D41D97D9F700BD8AC6 /* AppDelegate.swift */; };
+		B5EC68D71D97DA2800BD8AC6 /* Swan.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EC68D61D97DA2800BD8AC6 /* Swan.xcassets */; };
+		EFC4FEB7D01732E310EF4A3B /* Pods_BlackSwan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D58978D74F8C499E867238 /* Pods_BlackSwan.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,12 +24,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13CF9A25EAA4987A25AA2D73 /* Pods-BlackSwan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackSwan.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlackSwan/Pods-BlackSwan.release.xcconfig"; sourceTree = "<group>"; };
 		8C25E9521D95253700A9C79C /* BlackSwan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackSwan.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C25E9551D95253700A9C79C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C25E9611D95253700A9C79C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C25E9661D95253700A9C79C /* BlackSwanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackSwanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C25E96A1D95253700A9C79C /* BlackSwanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackSwanTests.swift; sourceTree = "<group>"; };
 		8C25E96C1D95253700A9C79C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5EC68D21D97D9C100BD8AC6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Support/Info.plist; sourceTree = "<group>"; };
+		B5EC68D41D97D9F700BD8AC6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Code/AppDelegate.swift; sourceTree = "<group>"; };
+		B5EC68D61D97DA2800BD8AC6 /* Swan.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Swan.xcassets; path = Assets/Swan.xcassets; sourceTree = "<group>"; };
+		D2D58978D74F8C499E867238 /* Pods_BlackSwan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackSwan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44FC3AEE91FFA4E4F71E4AD /* Pods-BlackSwan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackSwan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlackSwan/Pods-BlackSwan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC4FEB7D01732E310EF4A3B /* Pods_BlackSwan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +61,8 @@
 				8C25E9541D95253700A9C79C /* BlackSwan */,
 				8C25E9691D95253700A9C79C /* BlackSwanTests */,
 				8C25E9531D95253700A9C79C /* Products */,
+				CD265F39B4CEC2D758077D16 /* Pods */,
+				CE1D172FA68798D2AC369179 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,8 +78,9 @@
 		8C25E9541D95253700A9C79C /* BlackSwan */ = {
 			isa = PBXGroup;
 			children = (
-				8C25E9551D95253700A9C79C /* AppDelegate.swift */,
-				8C25E9611D95253700A9C79C /* Info.plist */,
+				B5EC68D11D97D9AE00BD8AC6 /* Assets */,
+				B5EC68D01D97D9A900BD8AC6 /* Code */,
+				B5EC68CF1D97D96200BD8AC6 /* Support */,
 			);
 			path = BlackSwan;
 			sourceTree = "<group>";
@@ -84,6 +94,47 @@
 			path = BlackSwanTests;
 			sourceTree = "<group>";
 		};
+		B5EC68CF1D97D96200BD8AC6 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				B5EC68D21D97D9C100BD8AC6 /* Info.plist */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		B5EC68D01D97D9A900BD8AC6 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				B5EC68D41D97D9F700BD8AC6 /* AppDelegate.swift */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		B5EC68D11D97D9AE00BD8AC6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B5EC68D61D97DA2800BD8AC6 /* Swan.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		CD265F39B4CEC2D758077D16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F44FC3AEE91FFA4E4F71E4AD /* Pods-BlackSwan.debug.xcconfig */,
+				13CF9A25EAA4987A25AA2D73 /* Pods-BlackSwan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE1D172FA68798D2AC369179 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2D58978D74F8C499E867238 /* Pods_BlackSwan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C25E96F1D95253700A9C79C /* Build configuration list for PBXNativeTarget "BlackSwan" */;
 			buildPhases = (
+				02BACB303F9A2C0F5D87DDAF /* [CP] Check Pods Manifest.lock */,
 				8C25E94E1D95253700A9C79C /* Sources */,
 				8C25E94F1D95253700A9C79C /* Frameworks */,
 				8C25E9501D95253700A9C79C /* Resources */,
+				0F4E387D9F527E6199E474BC /* [CP] Embed Pods Frameworks */,
+				EBFE0BB79F947179D65EBF20 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,12 +188,11 @@
 				TargetAttributes = {
 					8C25E9511D95253700A9C79C = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = BNUYT9K4U6;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					8C25E9651D95253700A9C79C = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = BNUYT9K4U6;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 8C25E9511D95253700A9C79C;
 					};
@@ -169,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5EC68D71D97DA2800BD8AC6 /* Swan.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,12 +235,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02BACB303F9A2C0F5D87DDAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0F4E387D9F527E6199E474BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlackSwan/Pods-BlackSwan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBFE0BB79F947179D65EBF20 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlackSwan/Pods-BlackSwan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8C25E94E1D95253700A9C79C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C25E9561D95253700A9C79C /* AppDelegate.swift in Sources */,
+				B5EC68D51D97D9F700BD8AC6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,21 +404,26 @@
 		};
 		8C25E9701D95253700A9C79C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F44FC3AEE91FFA4E4F71E4AD /* Pods-BlackSwan.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = BNUYT9K4U6;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BlackSwan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abelorosz.BlackSwan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		8C25E9711D95253700A9C79C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13CF9A25EAA4987A25AA2D73 /* Pods-BlackSwan.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = BNUYT9K4U6;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BlackSwan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -331,7 +438,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = BNUYT9K4U6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BlackSwanTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abelorosz.BlackSwanTests;
@@ -346,7 +453,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = BNUYT9K4U6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BlackSwanTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abelorosz.BlackSwanTests;
