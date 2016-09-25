@@ -105,6 +105,8 @@
 		B5EC68D01D97D9A900BD8AC6 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				B5EC68D91D97F72800BD8AC6 /* Common */,
+				B5EC68DA1D97F72C00BD8AC6 /* Modules */,
 				B5EC68D41D97D9F700BD8AC6 /* AppDelegate.swift */,
 			);
 			name = Code;
@@ -116,6 +118,28 @@
 				B5EC68D61D97DA2800BD8AC6 /* Swan.xcassets */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		B5EC68D91D97F72800BD8AC6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B5EC68DB1D97F73700BD8AC6 /* Models */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		B5EC68DA1D97F72C00BD8AC6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		B5EC68DB1D97F73700BD8AC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		CD265F39B4CEC2D758077D16 /* Pods */ = {
@@ -148,6 +172,7 @@
 				8C25E9501D95253700A9C79C /* Resources */,
 				0F4E387D9F527E6199E474BC /* [CP] Embed Pods Frameworks */,
 				EBFE0BB79F947179D65EBF20 /* [CP] Copy Pods Resources */,
+				B5EC68D81D97F68300BD8AC6 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -265,6 +290,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlackSwan/Pods-BlackSwan-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B5EC68D81D97F68300BD8AC6 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		EBFE0BB79F947179D65EBF20 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -408,7 +447,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = BlackSwan/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BlackSwan/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abelorosz.BlackSwan;
@@ -424,7 +463,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = BlackSwan/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BlackSwan/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abelorosz.BlackSwan;

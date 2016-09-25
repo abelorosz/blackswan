@@ -8,6 +8,8 @@ target 'BlackSwan' do
 	platform :ios, '9.0'
 
 	pod 'Moya', '8.0.0-beta.2'
+	pod 'ObjectMapper', '2.0.0'
+	pod 'SwiftLocation', '1.1.0'
 
 end
 
