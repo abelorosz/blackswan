@@ -52,7 +52,7 @@
                 <constraint firstItem="gmd-C3-1tK" firstAttribute="leading" secondItem="Pb3-Le-XZV" secondAttribute="trailing" id="fwA-gA-5nB"/>
                 <constraint firstAttribute="trailing" secondItem="gmd-C3-1tK" secondAttribute="trailing" id="igJ-Oc-Zp4"/>
                 <constraint firstItem="7uL-hz-Xtg" firstAttribute="leading" secondItem="kRU-kI-Sx4" secondAttribute="leading" id="lWH-K5-bTh"/>
-                <constraint firstAttribute="bottom" secondItem="7uL-hz-Xtg" secondAttribute="bottom" constant="4" id="qjX-JZ-30M"/>
+                <constraint firstAttribute="bottom" secondItem="7uL-hz-Xtg" secondAttribute="bottom" id="qjX-JZ-30M"/>
                 <constraint firstItem="gmd-C3-1tK" firstAttribute="top" secondItem="kRU-kI-Sx4" secondAttribute="top" id="yh7-78-9Bn"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>

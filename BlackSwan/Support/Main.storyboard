@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="aZJ-IQ-Xnu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XLD-av-GCF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wlm-I0-cLb">
@@ -25,10 +25,10 @@
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CurrentCell" rowHeight="420" id="wCF-xJ-cZ5" customClass="CurrentCell" customModule="BlackSwan" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="420"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="420"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wCF-xJ-cZ5" id="mvC-yg-9Zb">
-                                            <frame key="frameInset" width="375" height="420"/>
+                                            <frame key="frameInset" width="320" height="420"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="36°" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yb7-XS-vvy">
@@ -65,11 +65,11 @@
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="nkl-jH-wB5" firstAttribute="top" secondItem="mvC-yg-9Zb" secondAttribute="top" constant="20" id="0qJ-RA-hqI"/>
+                                                <constraint firstItem="nkl-jH-wB5" firstAttribute="top" secondItem="mvC-yg-9Zb" secondAttribute="top" constant="25" id="0qJ-RA-hqI"/>
                                                 <constraint firstItem="nkl-jH-wB5" firstAttribute="centerX" secondItem="mvC-yg-9Zb" secondAttribute="centerX" id="3pA-vL-OrW"/>
                                                 <constraint firstItem="BaR-yn-qN1" firstAttribute="leading" secondItem="mvC-yg-9Zb" secondAttribute="leadingMargin" id="6qP-LV-Zcs"/>
                                                 <constraint firstAttribute="trailing" secondItem="Yb7-XS-vvy" secondAttribute="trailing" id="HXe-JN-Vdy"/>
-                                                <constraint firstItem="kxH-gq-gl1" firstAttribute="top" secondItem="mvC-yg-9Zb" secondAttribute="top" constant="120" id="Hcf-Kq-ZI8"/>
+                                                <constraint firstItem="kxH-gq-gl1" firstAttribute="top" secondItem="mvC-yg-9Zb" secondAttribute="top" constant="125" id="Hcf-Kq-ZI8"/>
                                                 <constraint firstItem="Yb7-XS-vvy" firstAttribute="top" secondItem="kxH-gq-gl1" secondAttribute="bottom" constant="70" id="K9M-SD-8uQ"/>
                                                 <constraint firstItem="BaR-yn-qN1" firstAttribute="top" secondItem="kxH-gq-gl1" secondAttribute="bottom" constant="-5" id="KQQ-Nf-apy"/>
                                                 <constraint firstItem="Yb7-XS-vvy" firstAttribute="leading" secondItem="mvC-yg-9Zb" secondAttribute="leading" id="Lvg-fE-AzT"/>
@@ -87,10 +87,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ForecastCell" rowHeight="100" id="WT6-7h-kma" customClass="ForecastCell" customModule="BlackSwan" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="448" width="375" height="100"/>
+                                        <rect key="frame" x="0.0" y="448" width="320" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WT6-7h-kma" id="9I4-OH-pFY">
-                                            <frame key="frameInset" width="375" height="100"/>
+                                            <frame key="frameInset" width="320" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqz-rT-MAd">
