@@ -8,4 +8,3 @@
 
 ## Usage
 - Run `pod install`
-- Create an API key at [OpenWeatherMap.org](http://openweathermap.org/api)

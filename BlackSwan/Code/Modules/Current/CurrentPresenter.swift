@@ -62,7 +62,7 @@ extension CurrentPresenter: CurrentInteractorOutput {
     
 }
 
-private extension CurrentPresenter {
+extension CurrentPresenter {
     
     func convertIDToString(id: String) -> String {
         switch id {

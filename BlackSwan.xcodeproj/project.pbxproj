@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8CE52CCA1D99085300637175 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE52CC91D99085300637175 /* ExtensionsTests.swift */; };
+		8CE52CCC1D990E4F00637175 /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE52CCB1D990E4F00637175 /* WeatherTests.swift */; };
 		B5EC68D51D97D9F700BD8AC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC68D41D97D9F700BD8AC6 /* AppDelegate.swift */; };
 		B5EC68D71D97DA2800BD8AC6 /* Swan.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EC68D61D97DA2800BD8AC6 /* Swan.xcassets */; };
 		B5EC68DD1D97FCB700BD8AC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EC68DC1D97FCB700BD8AC6 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		8C25E9661D95253700A9C79C /* BlackSwanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackSwanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C25E96C1D95253700A9C79C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CE52CC91D99085300637175 /* ExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
+		8CE52CCB1D990E4F00637175 /* WeatherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherTests.swift; sourceTree = "<group>"; };
 		B5EC68D21D97D9C100BD8AC6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Support/Info.plist; sourceTree = "<group>"; };
 		B5EC68D41D97D9F700BD8AC6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Code/AppDelegate.swift; sourceTree = "<group>"; };
 		B5EC68D61D97DA2800BD8AC6 /* Swan.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Swan.xcassets; path = Assets/Swan.xcassets; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 		8C25E9691D95253700A9C79C /* BlackSwanTests */ = {
 			isa = PBXGroup;
 			children = (
+				8CE52CCB1D990E4F00637175 /* WeatherTests.swift */,
 				8CE52CC91D99085300637175 /* ExtensionsTests.swift */,
 				8C25E96C1D95253700A9C79C /* Info.plist */,
 			);
@@ -490,6 +493,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CE52CCC1D990E4F00637175 /* WeatherTests.swift in Sources */,
 				8CE52CCA1D99085300637175 /* ExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
