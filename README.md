@@ -1,5 +1,8 @@
 # Weather app example
 
+![Weather](weather.jpg)
+
+
 ## Requirements
 - Swift 3.0
 - iOS 10.0+
