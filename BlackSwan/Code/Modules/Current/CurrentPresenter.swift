@@ -50,7 +50,7 @@ extension CurrentPresenter: CurrentInteractorOutput {
         
         for weather in forecast.list {
             let fc = Weather()
-            fc.icon = UIImage(named: weather.weather.icon)
+            fc.icon = UIImage(named: weather.weather.icon + "_small")
             fc.time = self.convertTimestampToString(time: Double(weather.time))
             fc.temperature = "\(Int(floor(weather.temperature.convertToTemperature(metric: true))))°"
             
