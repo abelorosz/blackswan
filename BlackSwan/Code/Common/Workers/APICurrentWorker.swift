@@ -10,9 +10,7 @@ import ObjectMapper
 class APICurrentWorker {
     
     func loadCurrentWeather(withLocation location: CLLocation, completion: @escaping (APICurrent?) -> Void) {
-        API.request(.current(location: location)) {
-            (result) in
-            
+        API.request(.current(location: location)) { (result) in
             switch result {
                 case let .success(response):
                     // swiftlint:disable force_try

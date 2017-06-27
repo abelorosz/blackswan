@@ -10,9 +10,7 @@ import ObjectMapper
 class APIForecastWorker {
     
     func loadForecastWeather(withLocation location: CLLocation, completion: @escaping (APIForecast?) -> Void) {
-        API.request(.forecast(location: location)) {
-            (result) in
-            
+        API.request(.forecast(location: location)) { (result) in
             switch result {
             case let .success(response):
                 // swiftlint:disable force_try

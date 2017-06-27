@@ -5,11 +5,11 @@ project 'BlackSwan.xcodeproj'
 
 target 'BlackSwan' do
 
-	platform :ios, '9.0'
+	platform :ios, '10.0'
 
-	pod 'Moya', '8.0.0-beta.2'
-	pod 'ObjectMapper', '2.0.0'
-	pod 'SwiftLocation', '1.1.0'
+	pod 'Moya', '8.0.5'
+	pod 'ObjectMapper', '2.2.7'
+	pod 'SwiftLocation', '2.0.7'
 
 end
 

@@ -21,17 +21,13 @@ class CurrentInteractor: CurrentInteractorInput {
     weak var presenter: CurrentInteractorOutput!
     
     func loadWeather() {
-        let _ = Location.getLocation(withAccuracy: .city, onSuccess: {
-            (location) in
-            
-            self.loadWeather(withLocation: location)
-        }) {
-            (location, error) in
-            
-            if let location = location {
-                self.loadWeather(withLocation: location)
-            }
-        }
+		Location.getLocation(accuracy: .city, frequency: .oneShot, success: { (_, location) -> (Void) in
+			self.loadWeather(withLocation: location)
+		}) { (_, location, _) -> (Void) in
+			if let location = location {
+				self.loadWeather(withLocation: location)
+			}
+		}
     }
     
 }

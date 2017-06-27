@@ -13,18 +13,18 @@ public enum APIEndpoints {
 }
 
 extension APIEndpoints: TargetType {
-    
+
     public var baseURL: URL { return URL(string: "http://api.openweathermap.org/data/2.5")! }
     
     public var path: String {
         switch self {
-            case .current(_): return "/weather"
-            case .forecast(_): return "/forecast"
+            case .current: return "/weather"
+            case .forecast: return "/forecast"
         }
     }
     
     public var method: Moya.Method {
-        return .GET
+        return .get
     }
     
     public var parameters: [String: Any]? {
@@ -43,16 +43,16 @@ extension APIEndpoints: TargetType {
     }
     
     public var task: Task { return .request }
-    public var multipartBody: [MultipartFormData]? { return nil }
     public var sampleData: Data { return "".data(using: String.Encoding.utf8)! }
+	public var parameterEncoding: ParameterEncoding { return URLEncoding.default }
     
 }
 
 let endpointClosure = { (target: APIEndpoints) -> Endpoint<APIEndpoints> in
     let url = target.baseURL.appendingPathComponent(target.path).absoluteString
-    var endpoint = Endpoint<APIEndpoints>(URL: url, sampleResponseClosure: {.networkResponse(200, target.sampleData)}, method: target.method, parameters: target.parameters)
-    endpoint = endpoint.endpointByAddingParameters(["appid": "80db27919a5b15bf334c1818707466ee"])
-    
+    var endpoint = Endpoint<APIEndpoints>(url: url, sampleResponseClosure: {.networkResponse(200, target.sampleData)}, method: target.method, parameters: target.parameters)
+	endpoint = endpoint.adding(newParameters: ["appid": "80db27919a5b15bf334c1818707466ee"])
+	
     return endpoint
 }
 
