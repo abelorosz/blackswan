@@ -5,18 +5,11 @@ project 'BlackSwan.xcodeproj'
 
 target 'BlackSwan' do
 
-	platform :ios, '10.0'
+	platform :ios, '11.0'
 
-	pod 'Moya', '8.0.5'
-	pod 'ObjectMapper', '2.2.7'
-	pod 'SwiftLocation', '2.0.7'
+	pod 'Moya', '11.0.0'
+	pod 'SwiftLint', '0.25.0'
+	pod 'ObjectMapper', '3.1.0'
+	pod 'SwiftLocation', '3.1.0'
 
-end
-
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-      config.build_settings['SWIFT_VERSION'] = '3.0'
-    end
-  end
 end

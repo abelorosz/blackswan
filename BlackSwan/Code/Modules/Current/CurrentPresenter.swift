@@ -1,5 +1,5 @@
 //
-//  Created by Abel Orosz on 2016-09-22.
+//  Created by Abel Orosz
 //  Copyright © 2016. Abel Orosz. All rights reserved.
 //
 
@@ -66,16 +66,16 @@ extension CurrentPresenter {
     
     func convertIDToString(id: String) -> String {
         switch id {
-            case "01d", "01n": return "Clear sky"
-            case "02d", "02n": return "Few clouds"
-            case "03d", "03n": return "Scattered clouds"
-            case "04d", "04n": return "Broken clouds"
-            case "09d", "09n": return "Shower rain"
-            case "10d", "10n": return "Rain"
-            case "11d", "11n": return "Thunderstorms"
-            case "13d", "13n": return "Snow"
-            case "50d", "50n": return "Mist"
-            default: return ""
+        case "01d", "01n": return "Clear sky"
+        case "02d", "02n": return "Few clouds"
+        case "03d", "03n": return "Scattered clouds"
+        case "04d", "04n": return "Broken clouds"
+        case "09d", "09n": return "Shower rain"
+        case "10d", "10n": return "Rain"
+        case "11d", "11n": return "Thunderstorms"
+        case "13d", "13n": return "Snow"
+        case "50d", "50n": return "Mist"
+        default: return ""
         }
     }
     

@@ -1,5 +1,5 @@
 //
-//  Created by Abel Orosz on 2016-09-22.
+//  Created by Abel Orosz
 //  Copyright © 2016. Abel Orosz. All rights reserved.
 //
 
@@ -21,13 +21,13 @@ class CurrentInteractor: CurrentInteractorInput {
     weak var presenter: CurrentInteractorOutput!
     
     func loadWeather() {
-		Location.getLocation(accuracy: .city, frequency: .oneShot, success: { (_, location) -> (Void) in
-			self.loadWeather(withLocation: location)
-		}) { (_, location, _) -> (Void) in
-			if let location = location {
-				self.loadWeather(withLocation: location)
-			}
-		}
+        Locator.currentPosition(accuracy: .city, onSuccess: { (location) in
+            self.loadWeather(withLocation: location)
+        }, onFail: { (_, location) in
+            if let location = location {
+                self.loadWeather(withLocation: location)
+            }
+        })
     }
     
 }

@@ -1,5 +1,5 @@
 //
-//  Created by Abel Orosz on 2016-09-22.
+//  Created by Abel Orosz
 //  Copyright © 2016. Abel Orosz. All rights reserved.
 //
 
@@ -38,7 +38,7 @@ class CurrentViewController: UIViewController {
         self.blackStatusBarBackground()
     }
     
-    func refreshWeather() {
+    @objc func refreshWeather() {
         self.presenter.loadWeather()
     }
     
@@ -80,16 +80,16 @@ extension CurrentViewController: UITableViewDelegate, UITableViewDataSource {
         let screenHeight = UIScreen.main.bounds.height
         
         switch indexPath.row {
-            case 1: return 100
-            default: return screenHeight - 120
+        case 1: return 100
+        default: return screenHeight - 120
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
-            case 0: return self.setupCurrentCell(tableView, cellForRowAt: indexPath)
-            case 1: return self.setupForecastCell(tableView, cellForRowAt: indexPath)
-            default: return UITableViewCell()
+        case 0: return self.setupCurrentCell(tableView, cellForRowAt: indexPath)
+        case 1: return self.setupForecastCell(tableView, cellForRowAt: indexPath)
+        default: return UITableViewCell()
         }
     }
     
