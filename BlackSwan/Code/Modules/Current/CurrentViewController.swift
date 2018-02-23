@@ -11,6 +11,7 @@ class CurrentViewController: UIViewController {
     
     var presenter: CurrentPresenterInput!
     
+    var window: UIWindow??
     var current: Weather!
     var forecast: [Weather]!
     
@@ -23,6 +24,7 @@ class CurrentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.window = UIApplication.shared.delegate?.window
         self.current = Weather(withTemperature: "...")
         self.forecast = []
         
@@ -43,8 +45,13 @@ class CurrentViewController: UIViewController {
     }
     
     private func blackStatusBarBackground() {
+        guard let topPadding = self.window??.safeAreaInsets.top else {
+            return
+        }
+        
+        let viewHeight = topPadding == 0 ? 20 : topPadding
         let screenWidth = UIScreen.main.bounds.width
-        let statusView = UIView(frame: CGRect(x: 0, y: 0, width: Int(screenWidth), height: 20))
+        let statusView = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: viewHeight))
         
         statusView.backgroundColor = UIColor.black
         self.view.addSubview(statusView)
@@ -77,7 +84,11 @@ extension CurrentViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let screenHeight = UIScreen.main.bounds.height
+        guard let bottomPadding = self.window??.safeAreaInsets.bottom else {
+            return 0
+        }
+        
+        let screenHeight = UIScreen.main.bounds.height - bottomPadding
         
         switch indexPath.row {
         case 1: return 100
