@@ -4,10 +4,10 @@
 
 
 ## Requirements
-- Swift 4.0
+- Swift 4.2
 - iOS 11.0+
-- Xcode 9.2+
-- Swiftlint 0.25.0
+- Xcode 10.1+
+- Swiftlint 0.28.2
 
 ## Usage
 - Run `pod install`
