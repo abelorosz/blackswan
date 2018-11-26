@@ -49,12 +49,12 @@ extension CurrentPresenter: CurrentInteractorOutput {
         var weatherArray = [Weather]()
         
         for weather in forecast.list {
-            let fc = Weather()
-            fc.icon = UIImage(named: weather.weather.icon + "_small")
-            fc.time = self.convertTimestampToString(time: Double(weather.time))
-            fc.temperature = "\(Int(floor(weather.temperature.convertToTemperature(metric: true))))°"
+            let fcst = Weather()
+            fcst.icon = UIImage(named: weather.weather.icon + "_small")
+            fcst.time = self.convertTimestampToString(time: Double(weather.time))
+            fcst.temperature = "\(Int(floor(weather.temperature.convertToTemperature(metric: true))))°"
             
-            weatherArray.append(fc)
+            weatherArray.append(fcst)
         }
         
         self.interface.refreshForecast(weatherArray)

@@ -1,32 +1,42 @@
 PODS:
-  - Alamofire (4.6.0)
-  - Moya (11.0.0):
-    - Moya/Core (= 11.0.0)
-  - Moya/Core (11.0.0):
+  - Alamofire (4.8.0)
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya/Core (12.0.1):
     - Alamofire (~> 4.1)
-    - Result (~> 3.0)
-  - ObjectMapper (3.1.0)
-  - Result (3.2.4)
-  - SwiftLint (0.25.0)
-  - SwiftLocation (3.1.0):
+    - Result (~> 4.0)
+  - ObjectMapper (3.4.1)
+  - Result (4.0.0)
+  - SwiftLint (0.28.2)
+  - SwiftLocation (3.2.0):
     - SwiftyJSON (~> 4.0.0-alpha.1)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
-  - Moya (= 11.0.0)
-  - ObjectMapper (= 3.1.0)
-  - SwiftLint (= 0.25.0)
-  - SwiftLocation (= 3.1.0)
+  - Moya (= 12.0.1)
+  - ObjectMapper (= 3.4.1)
+  - SwiftLint (= 0.28.2)
+  - SwiftLocation (= 3.2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Moya
+    - ObjectMapper
+    - Result
+    - SwiftLint
+    - SwiftLocation
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
-  Moya: be29766339783963a70d1279d69c891ab3a1393c
-  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
-  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
-  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
-  SwiftLocation: 8f5ef4f510a45e43239de57a3145b3669301e898
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
+  Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
+  SwiftLint: f1629ae733b64e9cad20052de01d1debd5b640e7
+  SwiftLocation: 77ffe8d04c1a743dba87f8fa5c418a9da698c2e9
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: edbe162c7184c9907d4ed99b9a96251a1f91b532
+PODFILE CHECKSUM: b7d39d05532e49e967d6bfdf7b8571bbf8d4f24d
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
